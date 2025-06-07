@@ -16,6 +16,33 @@ h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
 }
 
+a{
+    color: rgb(98, 167, 167);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(61, 104, 104);
+}
+
+button {
+    height: 30px;
+    width: 70px;
+    color: white;
+    background-color: #333;
+    padding: 5px;
+    border: none;
+    margin-top: 20px;
+    transition: 0.75s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .container {
     display: flex;
     height: 100%;
@@ -99,32 +126,6 @@ p i {
     vertical-align: middle;
 }
 
-.home-header{
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-.home-header h1{
-    margin-bottom: 5px;
-}
-
-.home-intro {
-    display: flex;
-}
-
-.home-intro img {
-    margin-right: 50px;
-    border-radius: 10px;
-}
-.home-intro p{
-    font-size: 22px;
-}
-.home-intro b{
-    color: rgb(98, 167, 167);
-}
 
 .custom {
     height: 1px;
@@ -170,6 +171,71 @@ p i {
     font-size: 1.2rem;
     color: #444;
   }
-  
-  
-  
+
+
+
+  .tech-h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    padding: 50px 0;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #eee;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .project-card {
+    text-decoration: none;
+    color: #333;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .project-card h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #444;
+  }
+
+  .project-card p {
+    text-align: center;
+    font-size: 1rem;
+    color: #777;
+  }
+
+  .project-card .link {
+    margin-top: 15px;
+    text-align: center;
+    color: #008CBA;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }

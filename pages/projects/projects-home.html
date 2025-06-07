@@ -1,0 +1,121 @@
+
+    <h1>
+        Projects
+    </h1>
+<div class="techs-container">
+
+
+  <a href="javascript:void(0);" onclick="loadPage('projects/python-projects')" class="tech-card">
+    <img src="../../images/techs/python.png">
+    <h3>Python</h3>
+    <p>Here are my Python projects</p>
+    <span>View More →</span>
+  </a>
+
+  <a href="javascript:void(0);" onclick="loadPage('projects/java-projects')" class="tech-card">
+    <img src="../../images/techs/java.png">
+    <h3>Java</h3>
+    <p>Here are my Java projects</p>
+    <span>View More →</span>
+  </a>
+
+  <a href="javascript:void(0);" onclick="loadPage('projects/csharp-projects')" class="tech-card">
+    <img src="../../images/techs/csharp.png">
+    <h3>C#</h3>
+    <p>Here are my C# projects</p>
+    <span>View More →</span>
+  </a>
+
+  <a href="javascript:void(0);" onclick="loadPage('projects/php-projects')" class="tech-card">
+    <img src="../../images/techs/php.png">
+    <h3>PHP</h3>
+    <p>Here are my PHP projects</p>
+    <span>View More →</span>
+  </a>
+
+  <a href="javascript:void(0);" onclick="loadPage('projects/js-projects')" class="tech-card">
+    <img src="../../images/techs/js.png">
+    <h3>JavaScript</h3>
+    <p>Here are my JS projects</p>
+    <span>View More →</span>
+  </a>
+
+  <a href="javascript:void(0);" onclick="loadPage('projects/htmlcss-projects')" class="tech-card">
+    <div class="dual-img">
+      <img src="../../images/techs/html-5.png">
+      <img src="../../images/techs/css-3.png">
+    </div>
+    <h3>HTML / CSS</h3>
+    <p>Here are my HTML / CSS projects</p>
+    <span>View More →</span>
+  </a>
+
+
+</div>
+
+
+<button onclick="loadPage(previousPage)">Go Back</button>
+
+<style>
+  .techs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.tech-card {
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tech-card img {
+  width: 100px;      
+  height: 100px;
+  object-fit: contain;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+
+.dual-img {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dual-img img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.tech-card h3 {
+  margin: 10px 0 10px;
+  text-align: center;
+}
+
+.tech-card p {
+  text-align: center;
+}
+
+.tech-card span {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+</style>

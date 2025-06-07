@@ -2,12 +2,22 @@ window.onload = function(){
     loadPage('home'); // load home page by default
 }
 
+let currentPage = 'home';
+let previousPage = '';
+
 
 function loadPage(page){
     const content = document.getElementById('content');
     const spinner = document.getElementById('spinner');
+    
 
     spinner.classList.remove('fade-out');
+
+    if (page !== currentPage){
+        previousPage = currentPage;
+        currentPage = page;
+    }
+
 
     fetch(`pages/${page}.html`)
     .then((res) => {
