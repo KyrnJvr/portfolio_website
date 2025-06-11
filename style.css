@@ -129,113 +129,114 @@ p i {
 
 .custom {
     height: 1px;
-    background: linear-gradient(to right, transparent, #1877F2, transparent);
+    background: linear-gradient(to right, transparent, #999, transparent);
     border: none;
     margin: 30px 0;
   }
-  .spinner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(4px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-  
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.4s ease, visibility 0.4s ease;
-  }
-  
-  .spinner.fade-out {
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  .spinner .spinner-overlay {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .spinner .spinner-overlay i {
-    font-size: 3rem;
-    color: #1877F2;
-    margin-bottom: 10px;
-  }
-  
-  .spinner .spinner-overlay p {
-    font-size: 1.2rem;
-    color: #444;
-  }
 
+/* Spinner codes (CHATGPT generated 😭) */
+.spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
 
+.spinner.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
 
-  .tech-h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #333;
-    padding: 50px 0;
-    background-color: #ffffff;
-    margin-bottom: 30px;
-    border-bottom: 3px solid #eee;
-  }
+.spinner .spinner-overlay {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: auto;
-  }
+.spinner .spinner-overlay i {
+  font-size: 3rem;
+  color: #1877F2;
+  margin-bottom: 10px;
+}
 
-  .project-card {
-    text-decoration: none;
-    color: #333;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+.spinner .spinner-overlay p {
+  font-size: 1.2rem;
+  color: #444;
+}
 
-  .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-  }
+/* project card styles */
 
-  .project-card img {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    margin: 0 auto 20px;
-    display: block;
-  }
+.tech-h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  padding: 50px 0;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #eee;
+}
 
-  .project-card h3 {
-    text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: #444;
-  }
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
 
-  .project-card p {
-    text-align: center;
-    font-size: 1rem;
-    color: #777;
-  }
+.project-card {
+  text-decoration: none;
+  color: #333;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .project-card .link {
-    margin-top: 15px;
-    text-align: center;
-    color: #008CBA;
-    font-weight: bold;
-    font-size: 1.1rem;
-  }
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.project-card h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.project-card p {
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+}
+
+.project-card .link {
+  margin-top: 15px;
+  text-align: center;
+  color: #008CBA;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
